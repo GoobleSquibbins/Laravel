@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100vh;
+    font-family: "poppins", sans-serif;
+    overflow: hidden;
+}
+/* 
+::-webkit-scrollbar{
+    width: 3px;
+}
+
+::-webkit-scrollbar-track{
+    background: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(233, 118, 42);
+    border-radius: 10px;
+} */
+
+.action-btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 3px;
+    width: 60px;
+    transition: .3s;
+}
+
+#edit:hover{
+    background: #979bc4;
+    color: white;
+    transition: .3s;
+}
+
+#delete:hover{
+    background: #FF5B5B;
+    color: white;
+    transition: .3s;
+}
+
+.error {
+    width: 90%;
+    background: #FF5B5B;
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.error p {
+    padding: 7px 0;
+}
+
+/* grad bg */
+    .home {
+        background-image: linear-gradient(to bottom right, #01363A, #CF774B) ;
+    }
+
+    .login {
+        background-image: linear-gradient(#01363A, #CF774B) ;
+    }
+
+    .register { 
+        background-image: linear-gradient(to bottom left, #01363A, #CF774B) ;
+    }
+
+    .transaksi{
+        background-image: linear-gradient(to left, #01363A, #CF774B) ;
+    }
+    
+    .member{
+        background-image: linear-gradient(to top right , #01363A, #CF774B) ;
+    }
+
+    .user{
+        background-image: linear-gradient(to top , #01363A, #CF774B) ;
+    }
+
+    .paket {
+        background-image: linear-gradient(to top left, #01363A, #CF774B) ;
+    }
+/* grad bg */
+
+tbody tr:nth-of-type(even){
+    background-color: #cfd8f0;
+}
+
+.title {
+    margin-top: 70px;
+    margin-left: 70px;
+    font-size: 2rem;
+}
+
+.main-container{
+    display: flex;
+    margin-left: 70px;
+    align-items: center;
+}
+
+.main-nav {
+    list-style: none;
+}
+
+.main-nav li{
+    margin: 25px;
+}
+
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.main-nav:has(.word:hover) a:not(.word:hover){
+    opacity: .2;
+    transition: .3s;
+}
+
+.container-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400PX;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.container-card form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.container-card h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: black;
+    border-bottom: 1px solid silver;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-top: 20px;
+}
+
+.txt_field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: center;
+}
+
+.btn-submit{
+    margin: 25px 0;
+    width: 100%;
+    border-radius: 20px;
+    padding: 7px 0;
+    transition: 0.3s;
+    border: 1px solid black;
+}
+
+.btn-submit:hover{
+    background: #EB7056;
+    transition: 0.3s;
+    color: white;
+}
+
+.btn-submit:focus{
+    background: #EA5054;
+}
+
+.dropdown{
+    width: 100%;
+}
+
+.dropdown select{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.dropdown {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dropdown label{
+    color: black;
+    text-align: center;
+}
+
+.dropdown select{
+    margin-top: 10px;
+}
+
+.username{
+    margin-left: 150px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-nav a:hover{
+    -webkit-text-stroke: .3px black;
+}
+
+/* paket */
+    .the-one-who-wraps{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-paket {
+        position: absolute;
+        border-radius: 20px;
+        color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 97%;
+        height: 87%;
+        background: white; 
+        padding: 3px;
+    }
+
+    .card-content-paket{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 7px;
+        width: 99%;
+        height: 98%;
+        overflow: hidden;
+        overflow-y: scroll;
+        font-size: 15px;
+    }
+
+    .button-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-back-paket{
+        margin-right: 10px;
+    }
+
+    .btn-tambah-paket{
+        margin-right: 10px; 
+    }
+
+    .btn-back-paket:hover{
+        background: #0a4e79;
+        transition: 0.3s;
+        color: white;
+    }
+
+    .btn-back-paket:focus{
+        background: #093369;
+        color: white;
+    }
+
+    .btn-tambah-paket:hover{
+        background: #EB7056;
+        transition: 0.3s;
+        color: white;
+    }
+
+    .btn-tambah-paket:focus{
+        background: #EA5054;
+    }
+
+    .button-row button{
+        margin-top: 5px;
+        margin-left: 2px;
+        height: 50px;
+        width: 130px;
+        background: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 15px;
+        transition: .3s;
+    }
+    
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    .table-paket{
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-collapse: collapse;
+    }
+
+    thead tr{
+        font-weight: bold;
+        border-bottom: 1px solid silver;
+    }
+
+    td, th{
+        padding: 10px;
+    }
+
+    tbody tr{
+        border-bottom: 1px solid lightgray;
+    }
+    tbody tr:last-of-type{
+        border-bottom: 3px solid #31353E;
+    }
+/* paket */
+
+.top-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.cari input{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 690px;
+    text-align: center;
+}

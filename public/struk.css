@@ -1,0 +1,66 @@
+body{
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+thead tr{
+    font-weight: bold;
+    border-bottom: 1px solid silver;
+}
+
+td, th{
+    padding: 10px;
+}
+
+tbody tr{
+    border-bottom: 1px solid lightgray;
+}
+tbody tr:last-of-type{
+    border-bottom: 3px solid #31353E;
+}
+
+.table-laporan{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+    border-collapse: collapse;
+}
+
+.table-laporan td, tr{
+    padding: 10px;
+}
+
+.table-laporan thead tr{
+    border-bottom: 10px solid silver;
+}
+
+.header h1{
+    border-bottom: 1px solid black;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn-balik{
+    margin: 25px 0;
+    width: 100%;
+    border-radius: 20px;
+    padding: 7px 0;
+    transition: 0.3s;
+    border: 1px solid black;
+}

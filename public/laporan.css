@@ -1,0 +1,52 @@
+body{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    border-bottom: 2px solid black;
+}
+
+table{
+    
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table tr, td, th{
+    padding: 10px;
+    border: none;
+}
+
+
+thead tr{
+    font-weight: bold;
+    border-bottom: 1px solid silver;
+}
+
+td, th{
+    padding: 10px;
+}
+
+tbody tr{
+    border-bottom: 1px solid lightgray;
+}
+tbody tr:last-of-type{
+    border-bottom: 3px solid #31353E;
+}
+
+tbody tr:nth-of-type(even){
+    background-color: #cfd8f0;
+}

@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+h1{
+    font-size: 90px;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background: rgb(133, 164, 204);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(115, 126, 184);
+}
